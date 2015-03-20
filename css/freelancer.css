@@ -448,3 +448,18 @@ footer .footer-below {
     display: none;
     opacity: 0;
 }
+
+@media (min-width: 1119px){
+    .img-fix{
+        max-height: 361px;
+        min-width:360px;
+    }
+    .ricardo-fix{
+        height: 361px;
+        min-width: 360px;
+    }
+}
+
+h2{
+    word-wrap: break-word;
+}
