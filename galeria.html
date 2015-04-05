@@ -1,0 +1,174 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+    <meta charset="utf-8">
+	<title>Galería</title>
+
+	<link rel="stylesheet" type="text/css" href="css/examples.css" media="all" />
+	<link rel="stylesheet" type="text/css" href="css/transitions.css" media="all" />
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/modern-business.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+
+
+	<script src="js/jquery.collagePlus.min.js"></script>
+	<script src="js/jquery.removeWhitespace.min.js"></script>
+	<script src="js/jquery.collageCaption.min.js"></script>
+
+    <script type="text/javascript">
+
+    // All images need to be loaded for this plugin to work so
+    // we end up waiting for the whole window to load in this example
+    $(window).load(function () {
+        $(document).ready(function(){
+            collage();
+            $('.Collage').collageCaption();
+        });
+    });
+
+
+
+    // Here we apply the actual CollagePlus plugin
+    function collage() {
+        $('.Collage').removeWhitespace().collagePlus(
+            {
+                'fadeSpeed'     : 1500,
+                'targetHeight'  : 350,
+                'effect'        : 'effect-2',
+                'direction'     : 'vertical',
+                'allowPartialLastRow':true
+            }
+        );
+    };
+
+    // This is just for the case that the browser window is resized
+    var resizeTimer = null;
+    $(window).bind('resize', function() {
+        // hide all the images until we resize them
+        $('.Collage .Image_Wrapper').css("opacity", 0);
+        // set a timer to re-apply the plugin
+        if (resizeTimer) clearTimeout(resizeTimer);
+        resizeTimer = setTimeout(collage, 200);
+    });
+
+    </script>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">Versatilidad Puertorriqueña</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="como-somos.html">¿Cómo somos los Puertorriqueños?</a>
+                    </li>
+                    <li>
+                        <a href="ambiente.html">Ambiente</a>
+                    </li>
+                    <li>
+                        <a href="promocion.html">Promoción Turística</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+	<section class="Collage effect-parent">
+		<div class="Image_Wrapper" data-caption="Bryan Cruz">
+			<a>
+				<img src="img/Bryan.jpg">
+			</a>
+		</div>
+		<div class="Image_Wrapper" data-caption="José Santiago">
+			<a>
+				<img src="img/Jose.jpg">
+			</a>
+		</div>
+		<div class="Image_Wrapper" data-caption="Natalia Camacho">
+			<a>
+				<img src="img/Natalia.jpg">
+			</a>
+		</div>
+		<div class="Image_Wrapper" data-caption="Luz Báez">
+			<a>
+				<img src="img/Luz.jpg">
+			</a>
+		</div>
+		<div class="Image_Wrapper" data-caption="Ricardo Rojas">
+			<a>
+				<img src="img/Ricardo.jpg">
+			</a>
+		</div>
+        <div class="Image_Wrapper" data-caption="Sección de Ambiente">
+			<a href="ambiente.html">
+				<img src="img/ambiente.jpg">
+			</a>
+		</div>
+        <div class="Image_Wrapper" data-caption="Inicio">
+			<a href="index.html">
+				<img src="img/bienvenido.jpg">
+			</a>
+		</div>
+        <div class="Image_Wrapper" data-caption="Playa Flaminco">
+			<a>
+				<img src="img/carr-3.jpeg">
+			</a>
+		</div>
+        <div class="Image_Wrapper" data-caption="¿Cómo somos los puertorriqueños?">
+			<a href="como-somos.html">
+				<img src="img/como-somos.jpg">
+			</a>
+		</div>
+        <div class="Image_Wrapper" data-caption="Cavernas de Camuy">
+			<a href="promocion.html">
+				<img src="img/promocion.jpg">
+			</a>
+		</div>
+        <div class="Image_Wrapper" data-caption="¿Quiénes somos?">
+			<a href="quienes-somos.html">
+				<img src="img/quienessomos.jpg">
+			</a>
+		</div>
+        <div class="Image_Wrapper" data-caption="Alcapurrias">
+			<a href="como-somos.html">
+				<img src="img/alcapurria.jpg">
+			</a>
+		</div>
+        <div class="Image_Wrapper" data-caption="Capitolio de Puerto Rico">
+			<a>
+				<img src="img/capitolio.jpg">
+			</a>
+		</div>
+                
+
+	</section>
+
+
+
+</body>
+
+</html>
