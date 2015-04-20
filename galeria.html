@@ -23,43 +23,6 @@
 	<script src="js/jquery.removeWhitespace.min.js"></script>
 	<script src="js/jquery.collageCaption.min.js"></script>
 
-    <script type="text/javascript">
-
-    // All images need to be loaded for this plugin to work so
-    // we end up waiting for the whole window to load in this example
-    $(window).load(function () {
-        $(document).ready(function(){
-            collage();
-            $('.Collage').collageCaption();
-        });
-    });
-
-
-
-    // Here we apply the actual CollagePlus plugin
-    function collage() {
-        $('.Collage').removeWhitespace().collagePlus(
-            {
-                'fadeSpeed'     : 1500,
-                'targetHeight'  : 200,
-                'effect'        : 'effect-2',
-                'direction'     : 'vertical',
-                'allowPartialLastRow':false
-            }
-        );
-    };
-
-    // This is just for the case that the browser window is resized
-    var resizeTimer = null;
-    $(window).bind('resize', function() {
-        // hide all the images until we resize them
-        $('.Collage .Image_Wrapper').css("opacity", 0);
-        // set a timer to re-apply the plugin
-        if (resizeTimer) clearTimeout(resizeTimer);
-        resizeTimer = setTimeout(collage, 200);
-    });
-
-    </script>
 </head>
 
 <body>
@@ -173,13 +136,6 @@
 
 <!--Javascript  bellow this-->
 
-	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
-
-
-	<script src="js/jquery.collagePlus.min.js"></script>
-	<script src="js/jquery.removeWhitespace.min.js"></script>
-	<script src="js/jquery.collageCaption.min.js"></script>
-
     <script type="text/javascript">
 
     // All images need to be loaded for this plugin to work so
@@ -215,6 +171,41 @@
         if (resizeTimer) clearTimeout(resizeTimer);
         resizeTimer = setTimeout(collage, 200);
     });
+    
+        // All images need to be loaded for this plugin to work so
+    // we end up waiting for the whole window to load in this example
+    $(window).load(function () {
+        $(document).ready(function(){
+            collage();
+            $('.Collage').collageCaption();
+        });
+    });
+
+
+
+    // Here we apply the actual CollagePlus plugin
+    function collage() {
+        $('.Collage').removeWhitespace().collagePlus(
+            {
+                'fadeSpeed'     : 1500,
+                'targetHeight'  : 200,
+                'effect'        : 'effect-2',
+                'direction'     : 'vertical',
+                'allowPartialLastRow':false
+            }
+        );
+    };
+
+    // This is just for the case that the browser window is resized
+    var resizeTimer = null;
+    $(window).bind('resize', function() {
+        // hide all the images until we resize them
+        $('.Collage .Image_Wrapper').css("opacity", 0);
+        // set a timer to re-apply the plugin
+        if (resizeTimer) clearTimeout(resizeTimer);
+        resizeTimer = setTimeout(collage, 200);
+    });
+
 
     </script>
 
