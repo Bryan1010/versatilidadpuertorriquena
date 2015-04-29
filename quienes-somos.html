@@ -28,6 +28,20 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+    
+        
+    <script src="http://maps.googleapis.com/maps/api/js"></script>
+    <script>
+        function initialize() {
+          var mapProp = {
+            center:new google.maps.LatLng(51.508742,-0.120850),
+            zoom:5,
+            mapTypeId:google.maps.MapTypeId.ROADMAP
+          };
+          var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+        }
+        google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
 
 </head>
 
@@ -100,7 +114,7 @@
             </div>
             <div class="row">
                 <div class="col-lg-8 col-xs-12 col-lg-offset-2">
-                    <p>Esta página es producto de un proyecto de historia. En la misma se busca instruir a nuestros visitantes sobre la historia de nuestra isla, Puerto Rico. El propósito es demostrar la versatilidad puertorriqueña y como con esfuerzo y trabajo hemos podido salir adelante.</p>
+                    <p>Esta página es producto de un proyecto de la clase de historia de Puerto Rico realizado por alumnos de duodecimo grado de la Escuela Especializada en Ciencias y Matemáticas University Gardens. En esta página se busca instruir a nuestros visitantes sobre la historia de nuestra isla, Puerto Rico. El propósito es demostrar la versatilidad puertorriqueña y como con esfuerzo y trabajo hemos podido salir adelante.</p>
 
                 </div>
             </div>
