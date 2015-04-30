@@ -94,3 +94,11 @@ footer {
 section {
     margin-top: 40px;
 }
+
+.btn {
+    background-color: transparent;
+}
+
+.black-font {
+    color: black;
+}
