@@ -465,6 +465,8 @@ h2{
 }
 
 .img-responsive{
-    width: 100%;
+}
+.news-pic {
+        width: 100%;
     height: 200px;
 }
