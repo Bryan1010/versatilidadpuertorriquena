@@ -470,3 +470,7 @@ h2{
         width: 100%;
     height: 200px;
 }
+
+.margin-top-xs{
+    padding-top: 10px;
+}
