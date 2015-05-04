@@ -102,3 +102,12 @@ section {
 .black-font {
     color: black;
 }
+
+.special-home-buttons{
+    opacity: 0.8;"
+}
+/*
+.special-home-buttons:hover {
+    background: #fff;
+    color: #2E6DA4; 
+}*/
