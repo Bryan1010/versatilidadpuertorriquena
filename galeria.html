@@ -28,48 +28,115 @@
 <body>
 
     <!-- Navigation -->
-    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <nav class="navbar navbar-inverse navbar-fixed-top col-xs-12" role="navigation">
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
+            <div class="navbar-header " style="padding-botom:5px;">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.html">Versatilidad Puertorriqueña</a>
+                <a  class="navbar-brand col-xs-12 hidden-xs" href="index.html">Versatilidad Puertorriqueña</a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
-                <li>
-                    <a href="quienes-somos.html">¿Quienes Somos?</a>
-                </li>
-                <li>
-                    <a href="como-somos.html">¿Cómo somos los Puertorriqueños?</a>
-                </li>
-                <li>
-                    <a href="ambiente.html">Ambiente</a>
-                </li>
-                <li>
-                    <a href="promocion.html">Promoción Turística</a>
-                </li>
-                <li>
-                    <a href="historia.html">Nuestra Historia</a>
-                </li>
-                <li>
-                    <a href="noticias.html">Noticias</a>
-                </li>
-                <li>
-                    <a href="referencias.html">Referencias</a>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"> Secciones <b class="caret"></b></a>
+                    <ul class="dropdown-menu col-xs-6">
+                        <li>
+                            <a class="hidden-md hidden-sm hidden-md hidden-lg hidden-xl" href="index.html">Inicio</a>
+                        </li>
+                        <li>
+                            <a href="quienes-somos.html">¿Quienes Somos?</a>
+                        </li>                        
+                        <li>
+                            <a class="class-xs-12" href="como-somos.html">¿Cómo somos los Puertorriqueños?</a>
+                        </li>
+                        <li>
+                            <a href="ambiente.html">Ambiente</a>
+                        </li>
+                        <li>
+                            <a href="promocion.html">Promoción Turística</a>
+                        <li>
+                            <a href="historia.html">Nuestra Historia</a>
+                        </li>
+                        <li>
+                            <a href="galeria.html">Galería</a>
+                        </li>
+                        <li>
+                            <a href="noticias.html">Noticias</a>
+                        </li>
+                    </ul>
                 </li>
             </ul>
         </div>
-        <!-- /.navbar-collapse -->
+            <!-- /.navbar-collapse -->
         </div>
         <!-- /.container -->
     </nav>
+
+    <header id="myCarousel" class="carousel slide">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+            <li data-target="#myCarousel" data-slide-to="3"></li>
+            <li data-target="#myCarousel" data-slide-to="4"></li>
+            <li data-target="#myCarousel" data-slide-to="5"></li>
+            <li data-target="#myCarousel" data-slide-to="6"></li>
+            <li data-target="#myCarousel" data-slide-to="7"></li>
+            <li data-target="#myCarousel" data-slide-to="8"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+            <div class="item active">
+                <a href="index.html">
+                    <div class="fill" style="background-image:url('img/grupo.jpg');"></div>
+                </a>
+                <div class="carousel-caption">
+                    <h1>Versatilidad Puertorriquena</h1>
+                    <p>En esta sección de la página encontrarás todas las imagenes y vídeos utilizados en la página.</p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="fill" style="background-image:url('img/ambiente.jpg');">
+                </div>
+                <div class="carousel-caption">
+                    <a href="http://www.culebra-beach-vacations.com/playa-flamenco.html">
+                        <button class="btn btn-primary btn-lg">
+                            <h1>Paya Flamenco</h1>
+                        </button>
+                    </a>
+                    <p>La playa Flamenco en Culebra es una playa espectacular en forma de media luna, de aguas transparentes color turquesa y arena blanca y fina.
+
+Rodeada de espesa vegetación verde, no de una larga fila de montañas de cemento en forma de hoteles como les ha pasado lamentablemente a muchas otras playas famosas, la playa Flamenco en Culebra es verdaderamente un escape del mundo moderno y ajetreado. </p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="fill" style="background-image:url('https://garygutierrezpr.files.wordpress.com/2014/10/the_great_fallacy_poster.jpg?w=268&h=435');">
+                </div>
+                <div class="carousel-caption">
+                    <a href="http://garygutierrezpr.com/2014/10/08/la-gran-falacia-mirada-desde-la-criminologia-critica/">
+                        <button class="btn btn-primary btn-lg">
+                            <h1>La Gran Falacia (Documental)</h1>
+                        </button>
+                    </a>
+                    <p>La Gran Falacia es un documental acerca de la situación política, social y económica de Puerto Rico.</p>
+                </div>
+            </div>
+        <!-- Controls -->
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+        <span class="icon-prev"></span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+        <span class="icon-next"></span>
+    </a>
+    </header> 
 
 	<section class="Collage effect-parent">
 		<div class="Image_Wrapper" data-caption="Bryan Cruz">
@@ -147,6 +214,25 @@
 	</section>
 
 <!--Javascript  bellow this-->
+
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Script to Activate the Carousel -->
+    <script>
+    $('.carousel').carousel({
+        interval: 7000 //changes the speed
+    })
+    </script>
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+
+
+    <script src="js/jquery.collagePlus.min.js"></script>
+    <script src="js/jquery.removeWhitespace.min.js"></script>
+    <script src="js/jquery.collageCaption.min.js"></script>
 
     <script type="text/javascript">
 
