@@ -25,6 +25,11 @@ a.active {
     color: #18bc9c;
 }
 
+html body section #portfolio p{
+    outline: 0;
+    color: #fff;
+}
+
 h1,
 h2,
 h3,
